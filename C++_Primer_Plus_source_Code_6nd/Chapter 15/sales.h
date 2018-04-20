@@ -11,8 +11,7 @@ public:
     private:
         int bi;  // bad index value
     public:
-        explicit bad_index(int ix,
-            const std::string & s = "Index error in Sales object\n");
+        explicit bad_index(int ix,   const std::string & s = "Index error in Sales object\n");
         int bi_val() const {return bi;}
         virtual ~bad_index() throw() {}
     };
@@ -35,8 +34,7 @@ class LabeledSales : public Sales
     private:
         std::string lbl;
     public:
-        nbad_index(const std::string & lb, int ix,
-           const std::string & s = "Index error in LabeledSales object\n");
+        nbad_index(const std::string & lb, int ix,   const std::string & s = "Index error in LabeledSales object\n");
         const std::string & label_val() const {return lbl;}
         virtual ~nbad_index() throw() {}
      };
